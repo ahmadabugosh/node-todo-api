@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 mongoose.Promise= global.Promise;
 
 //connect to database locally or heroku
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/TodoApp');
+mongoose.connect(process.env.MONGODB_URI);
 
 //exports mongoose
 
