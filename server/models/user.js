@@ -90,6 +90,7 @@ return User.findOne ({
 
 };
 
+//added user password hashing to schema
 UserSchema.pre('save', function(next) {
 var user=this;
 
